@@ -26,3 +26,8 @@ commons-lang3-3.7/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Exclusions
+!java-client-6.0.0-BETA3.jar
+!selenium-java-3.9.1.zip
+!commons-lang3-3.7-bin.zip
