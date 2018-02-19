@@ -4,7 +4,8 @@
 # Unnecessary files
 bin/
 .DS_STORE
-libs/*
+selenium-java-3.9.1/
+commons-lang3-3.7/
 
 # Log file
 *.log
