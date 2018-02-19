@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+# Unnecessary files
+bin/
+.DS_STORE
+
 # Log file
 *.log
 
