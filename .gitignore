@@ -4,6 +4,7 @@
 # Unnecessary files
 bin/
 .DS_STORE
+libs/*
 
 # Log file
 *.log
