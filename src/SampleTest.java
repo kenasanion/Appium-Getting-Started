@@ -21,7 +21,7 @@ public class SampleTest {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		
 		// Set our desired capabilities with the minimum required properties
-		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4.2");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
@@ -47,6 +47,9 @@ public class SampleTest {
 			// This action is somehow hardcoded.
 			driver.navigate().back();
 			driver.navigate().back();
+			
+			MobileElement el1 = (MobileElement) driver.findElementByAccessibilityId("Add Contact");
+			el1.click();
 		} else {
 			System.err.println("Error: No file found!");
 		}
