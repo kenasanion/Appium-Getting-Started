@@ -1,3 +1,5 @@
+
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,6 +17,8 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class SampleTest {
 	
+	
+	
 	public static void main(String[] args) throws Exception {
 		
 		// Initializes desired capabilities
@@ -22,7 +26,7 @@ public class SampleTest {
 		
 		// Set our desired capabilities with the minimum required properties
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME , "android");
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4.2");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 		
