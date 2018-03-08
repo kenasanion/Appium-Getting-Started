@@ -3,20 +3,16 @@ package com.pearl.auto.android.page;
 import static com.pearl.auto.android.utils.Helpers.driver;
 import static com.pearl.auto.android.utils.Helpers.driverWait;
 import static com.pearl.auto.android.utils.Helpers.find;
-import static com.pearl.auto.android.utils.Helpers.pressBack;
 import static com.pearl.auto.android.utils.Helpers.implicitWait;
-
-import java.util.concurrent.TimeUnit;
+import static com.pearl.auto.android.utils.Helpers.pressBack;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import io.appium.java_client.functions.ExpectedCondition;
-
 public class GoogleTranslatePage {
 
 	public void clickDone() {
-	    find(By.xpath(("/hierarchy/android.widget.FrameLayout")));
+		find(By.xpath(("/hierarchy/android.widget.FrameLayout")));
 	    find(By.id("com.google.android.apps.translate:id/button_done")).click();
 
 		driverWait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.google.android.apps.translate:id/design_navigation_view")));

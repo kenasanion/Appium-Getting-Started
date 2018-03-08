@@ -1,8 +1,10 @@
 package com.pearl.auto.android.main;
 
+import static com.pearl.auto.android.utils.Helpers.driver;
+import static com.pearl.auto.android.utils.Helpers.driverWait;
+
 import java.net.URL;
 import java.nio.file.Paths;
-import java.util.Date;
 
 import org.junit.After;
 import org.junit.Before;
@@ -12,9 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-
-import static com.pearl.auto.android.utils.Helpers.driver;
-import static com.pearl.auto.android.utils.Helpers.driverWait;
  
 /**
  * @author kenasanion
@@ -57,10 +56,12 @@ public abstract class AppiumBaseTest<T> implements IBaseTest {
             driverWait = new WebDriverWait(driver, 60);
         }
     }
- 
+    
     /** Run after each test **/
     @After
     public void tearDown() throws Exception {
+		Thread.sleep(3000);
+		
         if (driver != null) driver.quit();
     }
 }

@@ -24,19 +24,4 @@ public class GoogleTranslateTest extends AppiumBaseTest<GoogleTranslatePage> {
     		String translatedWord = page.translate("Hello");
     		Assertions.assertEquals("Hola", translatedWord);
     }
-    
-    @org.junit.Test
-    public void TestCase_003() throws Exception {
-    	
-    }
-    
-    @org.junit.Test
-    public void TestCase_004() throws Exception {
-    	
-    }
-    
-    @org.junit.Test
-    public void TestCase_005() throws Exception {
-    	
-    }
 }
